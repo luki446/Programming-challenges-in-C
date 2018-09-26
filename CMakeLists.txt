@@ -9,7 +9,13 @@ else()
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 endif()
 
+add_definitions(-DSDL_STATIC)
+
+add_subdirectory(ext/SDL/)
+include_directories(ext/SDL/include/)
+
 include_directories(include/)
 
 add_subdirectory(000-unit-converter)
 add_subdirectory(001-word-counter)
+add_subdirectory(002-clock)

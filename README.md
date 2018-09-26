@@ -3,3 +3,4 @@ Some example programs in C
 ## List  
 000 - Unit converter  
 001 - Count occurences of word in text file  
+002 - Graphical clock  
